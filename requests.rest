@@ -1,0 +1,26 @@
+GET http://localhost:5000/products
+###
+GET http://localhost:5000/products/649fe993a5c4526d95ce4e24
+
+###
+POST http://localhost:5000/products/new
+Content-Type: application/json
+
+{
+        "name":"pants",
+        "price":150,
+        "department":"clothing"
+}
+
+
+###
+PUT  http://localhost:5000/products/649fe993a5c4526d95ce4e24
+Content-Type: application/json
+
+{
+        "price":225
+}
+###
+
+DELETE http://localhost:5000/products/649fff9ea5c4526d95ce4e26
+
